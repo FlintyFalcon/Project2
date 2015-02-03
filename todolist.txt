@@ -1,0 +1,37 @@
+KEY
+** tier 1 (page)
+* tier 2 (item on page)
+- tier 3 (item attributes)
+
+Needs: 
+**performance info
+-showtimes
+-info about show
+-buy tickets ->redirect to store
+
+**store
+*items
+-desc
+-price
+-picture
+
+*tickets
+-time
+-price
+-desc
+
+**social media
+*facebook
+*github
+*twitter
+*yelp
+
+**about page
+*location
+*directions
+*contact us
+
+Assets folder
+-movie thumbnails
+-company logo
+-merch thumbnails
