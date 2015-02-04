@@ -17,10 +17,13 @@ Needs:
 -price
 -picture
 
-*tickets
--time
--price
--desc
+**movies
+*time
+*price
+*Synopsis
+*cast
+*description
+*rating?
 
 **social media (in base.html)
 *facebook
