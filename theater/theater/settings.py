@@ -1,5 +1,5 @@
 """
-Django settings for theater project.
+Django settings for theater_project2 project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '^%%jku5pj+!(^%l*po3ut!_9op+r^0_j4p30xz==75uigkunmh'
+SECRET_KEY = 'h+*5zboq#ef1rp$t)8bmib@)tt&a=0kgjiw-e2tw5v$m#z!28$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'theater_app',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -48,9 +49,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'theater.urls'
+ROOT_URLCONF = 'theater_project2.urls'
 
-WSGI_APPLICATION = 'theater.wsgi.application'
+WSGI_APPLICATION = 'theater_project2.wsgi.application'
 
 
 # Database
