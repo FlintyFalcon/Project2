@@ -1,4 +1,4 @@
-# Create your views here.
+from django.core import serializers
 from django.shortcuts import render
 from django.http import HttpResponse
 from theater.models import Store, Movies, Synopsis, About
@@ -17,7 +17,7 @@ def movies(request):
 
 ## More detail on a specific movie. Synopsis, ratings, and cast
 def synopsis(request):
-	return render(request, 'syopsis.html', {})
+	return render(request, 'synopsis.html', {})
 
 ## Storefront to sell merch for our business. Shirts, mugs, stickers, gift cards.
 def store(request):
