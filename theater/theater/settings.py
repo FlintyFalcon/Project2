@@ -36,7 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'theater_app',
+    'theater',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -49,9 +49,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'theater_project2.urls'
+ROOT_URLCONF = 'theater.urls'
 
-WSGI_APPLICATION = 'theater_project2.wsgi.application'
+WSGI_APPLICATION = 'theater.wsgi.application'
 
 
 # Database

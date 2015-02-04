@@ -6,7 +6,7 @@ from . import views
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'theater_project2.views.home', name='home'),
+    url(r'^$', 'theater.views.home', name='home'),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^showtimes/', include(views.showtimes)),
     url(r'^store/', include(views.store)),
