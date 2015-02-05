@@ -1,5 +1,5 @@
 """
-Django settings for theater_project2 project.
+Django settings for theBand project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -17,12 +17,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 # See https://docs.djangoproject.com/en/1.7/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'h+*5zboq#ef1rp$t)8bmib@)tt&a=0kgjiw-e2tw5v$m#z!28$'
+SECRET_KEY = '&jt)y-9_#50sb3+fuviw_n%7g7*3=z1qyac#(x_$*cz(+q-f!('
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 TEMPLATE_DEBUG = True
+
+TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
 
 ALLOWED_HOSTS = []
 
@@ -36,7 +38,6 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'theater',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -83,6 +84,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-TEMPLATE_DIRS = (
-    os.path.join(BASE_DIR,  'templates'),
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR), "static"
 )
