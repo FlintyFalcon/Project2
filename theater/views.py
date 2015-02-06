@@ -18,8 +18,8 @@ def movies(request):
 
 
 ## More detail on a specific movie. Synopsis, ratings, and cast
-def synopsis(request):
-    return render(request, 'synopsis.html', {})
+def descriptions(request):
+    return render(request, 'descriptions.html', {})
 
 
 ## Storefront to sell merch for our business. Shirts, mugs, stickers, gift cards.

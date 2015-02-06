@@ -413,7 +413,7 @@ h2 {
   font-weight: 300;
   margin-bottom: 40px;
   margin-top: 70px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 .single-event {
@@ -426,7 +426,7 @@ h2 {
   font-weight: 300;
   line-height: 26px;
   margin-top: 25px;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 
@@ -434,6 +434,7 @@ h2 {
   font-size: 18px;
   font-weight: 100;
   display: block;
+  text-transform: lowercase;
 }
 
 #event-carousel {

@@ -2,7 +2,7 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
-from views import home, movies, synopsis, about, store
+from views import home, movies, descriptions, about, store
 
 
 urlpatterns = patterns('',
@@ -10,7 +10,7 @@ urlpatterns = patterns('',
                        # url(r'^admin/', include(admin.site.urls)),
                        url(r'^$', home),
                        url(r'^movies/', movies),
-                       url(r'^synopsis/', synopsis),
+                       url(r'^descriptions/', descriptions),
                        url(r'^about/', about),
                        url(r'^store/', store)
 )
