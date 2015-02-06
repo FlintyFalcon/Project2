@@ -117,22 +117,14 @@
 				</div>				
 				<div class="col-sm-7 col-md-6">					
 					<ul id="countdown">
-						<li>					
-							<span class="days time-font">00</span>
-							<p>days </p>
-						</li>
 						<li>
-							<span class="hours time-font">00</span>
+							<span class="hours time-font">01</span>
 							<p class="">hours </p>
 						</li>
 						<li>
-							<span class="minutes time-font">00</span>
+							<span class="minutes time-font">27</span>
 							<p class="">minutes</p>
 						</li>
-						<li>
-							<span class="seconds time-font">00</span>
-							<p class="">seconds</p>
-						</li>				
 					</ul>
 				</div>
 			</div>
@@ -142,19 +134,35 @@
 		</div>
 	</section><!--/#explore-->
 
-	<section id="event">
+<section id="event">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-9">
-					<div id="event-carousel" class="carousel slide" data-interval="false">
-						<h2 class="heading">Newest Release!</h2>
+						<h2 class="heading">Newest Releases</h2>
+						<div class="carousel-inner">
 							<div class="item active">
 								<div class="row">
 									<div class="col-sm-4">
 										<div class="single-event">
-{#											<img class="img-responsive" src="{%  static 'images/event/event1.jpg' %}" alt="event-image">#}
+											<img class="img-responsive" src={% static "images/movie_art/interview.jpg" %} alt="event-image">
 											<h4>The Interview</h4>
-											<h5>Those one guys from Pineapple Express do another movie together</h5>
+											<h5>The movie with the two guys from Pineapple Express. They do controversial things and it's okay.</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+                                           {#http://content9.flixster.com/movie/11/18/08/11180871_det.jpg#}
+											<img class="img-responsive" src={% static "images/movie_art/imitation.jpg" %} alt="event-image">
+											<h4>The Imitation Game</h4>
+											<h5>The big shot that cut the war short with his super smart ideas.</h5>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-event">
+                                            {#http://s1339.photobucket.com/user/sp17ud/media/gb61_zps942729fc.jpg.html#}
+											<img class="img-responsive" src={% static "images/movie_art/taken.jpg" %} alt="event-image">
+											<h4>Taken 3</h4>
+											<h5>I wish these movies would get TAKEN out of production.</h5>
 										</div>
 									</div>
 								</div>
@@ -162,13 +170,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="guitar">
-					<img class="img-responsive" style="padding-right: 2em" src="{%  static 'images/clapper.png' %}" alt="guitar">
-{#                   SOURCE:  http://www.clker.com/cliparts/Z/e/p/U/7/c/action.svg#}
-				</div>
-			</div>			
+			</div>
 		</div>
 	</section><!--/#event-->
+
 
 
     {%  block content %}

@@ -317,19 +317,19 @@ h2 {
 }
 
 #countdown li .hours {
-  background-color: #efc94c; 
-  border-top: 1px solid #f2d470;
-  border-left: 1px solid #f2d470;
+  background-color: #61A35B;
+  border-top: 1px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
 }
 
 #countdown li .minutes {
-  background-color: #e27a3f;
-  border-top: 1px solid #e89565;
-  border-left: 1px solid #e89565;
+  background-color: #6E4FE2;
+  border-top: 1px solid #FFFFFF;
+  border-left: 1px solid #ffffff;
 }
 
 #countdown li .seconds {
-  background-color: #df5a49;
+  background-color: #6E4FE2;
   border-top: 1px solid #e57b6d;
   border-left: 1px solid #e57b6d;
 }
