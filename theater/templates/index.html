@@ -2,7 +2,130 @@
 
 <html>
 <head>
-
-
+    {% block title %}
+        <title>Theater Project</title>
+    {% endblock %}
 </head>
+
+<body>
+{% block header-bg %}
+{% endblock %}
+
+{% block main %}
+    <section id="home">
+        <div id="main-slider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#main-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#main-slider" data-slide-to="1"></li>
+                <li data-target="#main-slider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img class="img-responsive" src='static/images/slider/bg1.jpg' alt="slider">
+
+                    <div class="carousel-caption">
+                        <h2>Now Playing</h2>
+                        <h4>Check our current showtimes</h4>
+                        <a href="/movies">Movies<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="img-responsive" src='static/images/slider/bg2.png' alt="slider">
+                    {#SOURCE: http://moonwell.typepad.com/photos/grab_bag_gallery/spotlights-copy.png#}
+                    <div class="carousel-caption">
+                        <h2>Toy Story 5</h2>
+                        <h4>February 8, 2014</h4>
+                        <a href="/movies">Buy Tickets<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="img-responsive" src='static/images/slider/bg3.jpg' alt="slider">
+                    {#SOURCE: http://moonwell.typepad.com/photos/grab_bag_gallery/spotlights-copy.png#}
+                    <div class="carousel-caption">
+                        <h2>Directions</h2>
+                        <h4>Find out how to get to us!</h4>
+                        <a href="/about">Map<i class="fa fa-angle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/#home-->
+
+    <section id="explore">
+        <div class="container">
+            <div class="row">
+                <div class="watch">
+                    <img class="img-responsive" style="padding-left: 5em" src='static/images/watch2.png' alt="">
+                </div>
+                <div class="col-md-4 col-md-offset-2 col-sm-5">
+                    <h2>The next movie starts in</h2>
+                </div>
+                <div class="col-sm-7 col-md-6">
+                    <ul id="countdown">
+                        <li>
+                            <span class="hours time-font">01</span>
+
+                            <p class="">hours </p>
+                        </li>
+                        <li>
+                            <span class="minutes time-font">27</span>
+
+                            <p class="">minutes</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cart">
+                <a href="#"><i class="fa fa-shopping-cart"></i> <span>Purchase Tickets</span></a>
+            </div>
+        </div>
+    </section><!--/#explore-->
+
+    <section id="event">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-9">
+                    <h2 class="heading">Newest Releases</h2>
+
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="single-event">
+                                <img class="img-responsive"
+                                     src="static/images/movie_art/interview.jpg" alt="event-image">
+                                <h4>The Interview</h4>
+                                <h5>The movie with the two guys from Pineapple Express. They do controversial things to
+                                    gain publicity</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-event">
+                                {#http://s1339.photobucket.com/user/sp17ud/media/gb61_zps942729fc.jpg.html#}
+                                <img class="img-responsive"
+                                     src="static/images/movie_art/taken.jpg" alt="event-image">
+                                <h4>Taken 3</h4>
+                                <h5>I wish these movies would get TAKEN out of production.</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-event">
+                                {#http://img3.wikia.nocookie.net/__cb20130223204334/degrassi/images/4/42/Paws_jaws_mock_poster.jpg											<img class="img-responsive" src={% static "images/movie_art/taken.jpg" %} alt="event-image">#}
+                                <img class="img-responsive"
+                                     src="static/images/movie_art/paws.jpg" alt="event-image">
+                                <h4>Paws</h4>
+                                <h5>It's like Jaws, but there's no sharks, no blood, and no scary parts. It's nothing
+                                    like Jaws.</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--/#event-->
+{% endblock %}
+
+
+</body>
 </html>
