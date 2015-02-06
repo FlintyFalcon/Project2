@@ -1,7 +1,6 @@
 from django.core import serializers
 from django.shortcuts import render
 from django.http import HttpResponse
-# from theater.models import Store, Movies, Synopsis, About
 
 
 def home(request):
